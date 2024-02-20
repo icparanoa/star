@@ -13,6 +13,10 @@ a:hover {
   text-decoration: none;
 }
 
+p{
+  text-align: justify;
+}
+
 h1,
 h2,
 h3,
@@ -148,6 +152,7 @@ h6 {
 
 .navbar a,
 .navbar a:focus {
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -351,9 +356,8 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+  max-width: 100%;
+  height: 100vh;
   background: url("../img/hero.png") top center;
   background-size: cover;
   position: relative;
@@ -373,8 +377,8 @@ h6 {
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
+  margin-bottom: 95px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -577,6 +581,7 @@ section {
   font-weight: 600;
   font-size: 14px;
   color: #2e4b5e;
+  text-align: justify;
 }
 
 .about .count-box a {
@@ -624,6 +629,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .about .play-btn {
@@ -857,7 +863,7 @@ section {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: #e9a1c2;
+  background: #8ac1e0;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -872,7 +878,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #ED549A;
+  background: #066da8;
   right: 0;
   top: 0;
   width: 100%;
@@ -888,7 +894,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #ED549A;
+  background: #066da8;
   transition: all 0.3s ease-in-out;
 }
 
@@ -915,16 +921,22 @@ section {
 }
 
 .services .icon-box:hover .title a,
-.services .icon-box:hover .description {
+.services .icon-box:hover .description
+.services .icon-box:hover li {
   color: #fff;
 }
+
+.services .icon-box:hover li {
+  color: #FFF;
+}
+
 
 .services .icon-box:hover .icon {
   background: #fff;
 }
 
 .services .icon-box:hover .icon i {
-  color: #ED549A;
+  color: #066da8;
 }
 
 /*--------------------------------------------------------------
@@ -939,8 +951,9 @@ section {
 }
 
 .info-box .content h3 {
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #263d4d;
 }
 
 .info-box .content h4 {
